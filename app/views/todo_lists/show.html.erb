@@ -6,9 +6,9 @@
 <h3>Incomplete Items:</h3>
 
 <ul>
-	<% @todo_list.todo_items.incomplete.each do |todo_item| %>
-		<li><%= todo_item.content %></li>
-	<% end %>
+  <% @todo_list.todo_items.incomplete.each do |todo_item| %>
+  <li><%= todo_item.content %></li>
+  <% end %>
 </ul>
 <% end %>
 
@@ -16,9 +16,9 @@
 <h3>Complete Items:</h3>
 
 <ul>
-	<% @todo_list.todo_items.complete.each do |todo_item| %>
-		<li><%= todo_item.content %></li>
-	<% end %>
+  <% @todo_list.todo_items.complete.each do |todo_item| %>
+  <li><%= todo_item.content %></li>
+  <% end %>
 </ul>
 <% end %>
 
