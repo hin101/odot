@@ -56,6 +56,9 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    foundation-rails (5.2.3.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (1.5.3)
@@ -78,6 +81,8 @@ GEM
     pkg-config (1.1.7)
     polyglot (0.3.5)
     power_assert (0.3.0)
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -125,6 +130,7 @@ GEM
       rdoc (~> 4.0)
     shoulda-matchers (2.4.0)
       activesupport (>= 3.0.0)
+    spring (1.7.2)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -162,14 +168,17 @@ DEPENDENCIES
   capybara-email (~> 2.2.0)
   coffee-rails (~> 4.0.0)
   factory_girl_rails (~> 4.0)
+  foundation-rails (~> 5.2.2)
   jbuilder (~> 1.2)
   jquery-rails
   minitest
+  quiet_assets (~> 1.0.2)
   rails (= 4.1.0)
   rspec-rails (~> 2.0)
   sass-rails (~> 4.0.0)
   sdoc
   shoulda-matchers (~> 2.4.0)
+  spring
   sqlite3
   test-unit
   turbolinks
