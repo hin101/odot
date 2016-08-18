@@ -5,7 +5,7 @@ describe "Forgotten passwords" do
 
   it "sends a user an email" do
   	visit login_path
-  	click_link "Forgot Password"
+  	click_link "Forgot Password?"
   	fill_in "Email", with: user.email
   	expect {
   		click_button "Reset Password"
@@ -14,7 +14,7 @@ describe "Forgotten passwords" do
 
   it "resets a password when following the email link" do
   	visit login_path
-  	click_link "Forgot Password"
+  	click_link "Forgot Password?"
   	fill_in "Email", with: user.email
   	click_button "Reset Password"
   	open_email(user.email)
@@ -32,7 +32,7 @@ describe "Forgotten passwords" do
   	visit login_path
   	fill_in "Email", with: user.email
   	fill_in "Password", with: "password1"
-  	click_button "Log In"
+  	click_button "Sign In"
   	expect(page).to have_content("Thanks for logging in!")
   end
 
