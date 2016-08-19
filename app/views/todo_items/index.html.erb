@@ -1,5 +1,6 @@
 <div class="row collapse todo-list-title">
-  <div class="small-11 columns">
+<%= content_for(:title) do %><%= @todo_list.title %> | <% end %>
+<div class="small-11 columns">
     <h2 class="page-title truncate">
       <%= @todo_list.title %>
     </h2>
